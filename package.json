@@ -1,0 +1,19 @@
+{
+  "name": "nexmo-messages-facebook",
+  "version": "0.0.1",
+  "description": "Template application connecting Facebook Messenger to the Nexmo Messages API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Martyn Davies <martyn@vonage.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-route": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
