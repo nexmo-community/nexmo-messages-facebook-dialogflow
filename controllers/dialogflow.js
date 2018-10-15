@@ -14,7 +14,7 @@ const sessionClient = new dialogflow.SessionsClient();
 const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
 const dialogflowHandler = async query => {
-  // The text query request.
+  // Create a text query request object
   const request = {
     session: sessionPath,
     queryInput: {
@@ -25,12 +25,16 @@ const dialogflowHandler = async query => {
     }
   };
 
+  // Send the text query over to Dialogflow and await the result
+  // using .catch to throw any errors
   const result = await sessionClient
     .detectIntent(request)
     .catch(err => console.error('ERROR:', err));
 
+  // Pick out the response text from the returned array of objects
   const reply = await result[0].queryResult.fulfillmentText;
 
+  // Return the reply
   return reply;
 };
 
