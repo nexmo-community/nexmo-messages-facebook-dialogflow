@@ -4,7 +4,10 @@ const messageResponder = require('../controllers/nexmo');
 const routes = {
   inbound: async ctx => {
     // Get the detail of who sent the message, and the message itself
-    const { from, message } = ctx.request.body;
+    const { from, message } = await ctx.request.body;
+
+    // Log initial interaction from Facebook. You can uncomment this for testing.
+    //console.log(from, message);
 
     // Pass the message to Dialogflow and await the response
     const dialogflowResponse = await dialogflowHandler(message.content.text);
