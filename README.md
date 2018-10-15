@@ -17,7 +17,7 @@ To get this up and running:
 You will need a few things to get going with this app:
 
 - A [Nexmo](https://nexmo.com) Account
-- A Nexmo APP [[set one up here]](https://dashboard.nexmo.com/messages/create-application)
+- A Nexmo Messages & Dispatch App [[set one up here]](https://dashboard.nexmo.com/messages/create-application)
 - A Facebook page for a business or brand
 - A [Google Dialogflow](https://dialogflow.com) account
 
