@@ -2,6 +2,9 @@
   "name": "nexmo-messages-facebook",
   "version": "0.0.1",
   "description": "Template application connecting Facebook Messenger to the Nexmo Messages API & Google Dialogflow",
+  "engines": {
+    "node": ">=7.6.0"
+  },
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node ./server",

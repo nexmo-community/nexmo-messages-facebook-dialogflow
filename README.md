@@ -2,7 +2,7 @@
 
 This sample application demonstrates how to connect a Facebook page to Google's Dialogflow (a powerful NLP engine that allows you to write and train responses to incoming questions).
 
-This app is built using the [Koa framework](https://koajs.com/) and requires a Node.JS version of 8 or above. It uses the [Nexmo Messages API](https://developer.nexmo.com/messages/overview) to handle inbound and outbound messaging from Facebook.
+This app is built using the [Koa framework](https://koajs.com/) and requires a Node.JS version of 7.6.0 or above. It uses the [Nexmo Messages API](https://developer.nexmo.com/messages/overview) to handle inbound and outbound messaging from Facebook.
 
 ## Prerequisites
 
