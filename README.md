@@ -18,7 +18,7 @@ You will need a few things to get going with this app:
 To get this up and running:
 
 - Clone the repo and run `npm install`
-- Rename `.env.sample` to `.env` and fill out all the enviroment vars required
+- Rename `.env.sample` to `.env` and fill out all the environment vars required
 - Run `npm run dev` to start things up!
 
 ## Google Dialogflow Settings
