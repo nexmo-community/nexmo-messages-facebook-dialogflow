@@ -16,7 +16,7 @@ const routes = {
     ctx.status = 200;
   },
   status: async ctx => {
-    // The status endpoint isn't actually used in this endpoint but it is
+    // The status endpoint isn't actually used in this application but it is
     // good to have as a debugger because it allows you to see the message flow
     const status = await ctx.request.body;
     console.log(status);
