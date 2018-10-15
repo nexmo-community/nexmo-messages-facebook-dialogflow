@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 const Nexmo = require('nexmo');
 const FBID = process.env.FACEBOOK_PAGE_ID;
 

@@ -16,6 +16,7 @@
     "nexmo": "^2.4.1-beta-1"
   },
   "devDependencies": {
+    "dotenv": "^6.1.0",
     "nodemon": "^1.18.4"
   }
 }

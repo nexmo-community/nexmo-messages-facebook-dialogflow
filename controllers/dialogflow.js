@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 const projectId = process.env.DIALOGFLOW_PROJECT_ID;
 const sessionId = process.env.DIALOGFLOW_SESSION_ID;
 const languageCode = process.env.DIALOGFLOW_LANGUAGE_CODE;
