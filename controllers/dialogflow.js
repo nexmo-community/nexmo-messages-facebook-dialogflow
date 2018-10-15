@@ -1,6 +1,6 @@
-const projectId = 'smalltalkbot-e7462';
-const sessionId = 'mysessionid';
-const languageCode = 'en-US';
+const projectId = process.env.DIALOGFLOW_PROJECT_ID;
+const sessionId = process.env.DIALOGFLOW_SESSION_ID;
+const languageCode = process.env.DIALOGFLOW_LANGUAGE_CODE;
 
 // Instantiate a DialogFlow client.
 const dialogflow = require('dialogflow');

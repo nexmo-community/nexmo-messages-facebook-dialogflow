@@ -1,10 +1,11 @@
 const Nexmo = require('nexmo');
-const FBID = 'YOUR_FACEBOOK_PAGE_ID';
+const FBID = process.env.FACEBOOK_PAGE_ID;
+
 const nexmo = new Nexmo({
-  apiKey: NEXMO_API_KEY,
-  apiSecret: NEXMO_API_SECRET,
-  applicationId: NEXMO_APPLICATION_ID,
-  privateKey: './private.key'
+  apiKey: process.env.NEXMO_API_KEY,
+  apiSecret: process.env.NEXMO_API_SECRET,
+  applicationId: process.env.NEXMO_APPLICATION_ID,
+  privateKey: process.env.NEXMO_PRIVATE_KEY
 });
 
 const messageResponder = async message => {
