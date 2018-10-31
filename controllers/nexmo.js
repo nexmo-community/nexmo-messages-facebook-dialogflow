@@ -24,7 +24,15 @@ const messageResponder = async message => {
       }
     },
     (err, data) => {
-      console.log(data.message_uuid);
+      if (err) {
+        throw new Error(err);
+      } else {
+        console.log(
+          `Replied to ${message.id} with '${message.dialogflowResponse}' (ID: ${
+            data.message_uuid
+          })`
+        );
+      }
     }
   );
 };
