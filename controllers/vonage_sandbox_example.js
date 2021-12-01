@@ -27,6 +27,7 @@ const messageResponder = async (message) => {
   };
 
   const vonage_sandbox_number = '107083064136738';
+
   const dataString = `{
     "from": { "type": "messenger", "id": "${vonage_sandbox_number}" },
     "to": { "type": "messenger", "id": "${message.id}" },
