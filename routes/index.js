@@ -1,5 +1,5 @@
 const dialogflowHandler = require('../controllers/dialogflow');
-const messageResponder = require('../controllers/nexmo');
+const messageResponder = require('../controllers/vonage');
 
 const routes = {
   inbound: async ctx => {

@@ -1,4 +1,11 @@
+# Dependency directory
 node_modules
+
+# Private key
 private.key
+
+# Dialogflow and Google Cloud files
 smalltalkbot-e7462.json
+
+# Dotenv environment variables file
 .env

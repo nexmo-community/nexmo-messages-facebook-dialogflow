@@ -1,9 +1,9 @@
 {
-  "name": "nexmo-messages-facebook",
-  "version": "0.0.1",
-  "description": "Template application connecting Facebook Messenger to the Nexmo Messages API & Google Dialogflow",
+  "name": "vonage-messages-facebook",
+  "version": "0.0.3",
+  "description": "Template application connecting Facebook Messenger to the Vonage Messages API & Google Dialogflow",
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=8.0.0"
   },
   "main": "server.js",
   "scripts": {
@@ -11,16 +11,17 @@
     "dev": "nodemon server.js"
   },
   "author": "Martyn Davies <martyn@vonage.com>",
+  "contributor": "Amanda Cavallaro <amanda.cavallaro@vonage.com>",
   "license": "MIT",
   "dependencies": {
+    "@vonage/server-sdk": "^2.10.7-beta-2",
     "dialogflow": "^0.7.0",
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
-    "koa-route": "^3.2.0",
-    "nexmo": "^2.4.1-beta-1"
+    "koa-route": "^3.2.0"
   },
   "devDependencies": {
-    "dotenv": "^6.1.0",
-    "nodemon": "^1.18.4"
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.19.4"
   }
 }
