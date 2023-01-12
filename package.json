@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "@vonage/server-sdk": "^2.10.7-beta-2",
-    "dialogflow": "^0.7.0",
+    "dialogflow": "^0.8.0",
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
     "koa-route": "^3.2.0"
