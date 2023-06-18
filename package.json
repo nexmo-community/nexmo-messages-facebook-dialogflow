@@ -14,7 +14,7 @@
   "contributor": "Amanda Cavallaro <amanda.cavallaro@vonage.com>",
   "license": "MIT",
   "dependencies": {
-    "@vonage/server-sdk": "^2.10.7-beta-2",
+    "@vonage/server-sdk": "^2.11.3",
     "dialogflow": "^0.7.0",
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
