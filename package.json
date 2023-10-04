@@ -1,6 +1,6 @@
 {
   "name": "vonage-messages-facebook",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Template application connecting Facebook Messenger to the Vonage Messages API & Google Dialogflow",
   "engines": {
     "node": ">=8.0.0"
@@ -14,14 +14,14 @@
   "contributor": "Amanda Cavallaro <amanda.cavallaro@vonage.com>",
   "license": "MIT",
   "dependencies": {
-    "@vonage/server-sdk": "^2.10.7-beta-2",
-    "dialogflow": "^0.7.0",
-    "koa": "^2.5.3",
-    "koa-bodyparser": "^4.2.1",
+    "@vonage/server-sdk": "^3.9.3",
+    "dialogflow": "^1.2.0",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
     "koa-route": "^3.2.0"
   },
   "devDependencies": {
-    "dotenv": "^6.2.0",
-    "nodemon": "^1.19.4"
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
   }
 }

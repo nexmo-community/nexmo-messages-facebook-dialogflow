@@ -7,29 +7,28 @@ const routes = {
     //console.log(ctx.request.body);
 
     // Get the detail of who sent the message, and the message itself
-    const { from, message, direction, timestamp } = await ctx.request.body;
-
+    const { from, message_type, timestamp, text } = await ctx.request.body;
     // Check that the message type is 'text'. It can also be 'image'
-    if (message.content.type === 'text') {
+    if (message_type === 'text') {
       // Log initial interaction details from Facebook.
       console.log(
-        `New ${direction} message from ${from.id}. Content: "${
-          message.content.text
+        `New message from ${from}. Content: "${text
         }" at ${timestamp}`
       );
 
       // Pass the message to Dialogflow and await the response
-      const dialogflowResponse = await dialogflowHandler(message.content.text);
+      const dialogflowResponse = await dialogflowHandler(text);
 
       // Send the Dialogflow response back to the user
-      messageResponder({ ...from, dialogflowResponse });
+      console.log(messageResponder({ from, dialogflowResponse }));
+      console.log(dialogflowResponse);
 
       // All is OK
       ctx.status = 200;
     } else {
       console.log(
-        `New ${direction} message from ${from.id}. Content: "${
-          message.content.type
+        `New message from ${from.id}. Content: "${
+          message_type
         }" at ${timestamp}`
       );
       ctx.status = 200;

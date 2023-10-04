@@ -9,9 +9,9 @@ This app is built using the [Koa framework](https://koajs.com/) and requires a N
 You will need a few things to get going with this app:
 
 - A [Vonage](https://vonage.com) Account
-- A Vonage Messages & Dispatch App [[set one up here]](https://dashboard.nexmo.com/messages/create-application)
+- A Vonage Messages App [[set one up here]](https://dashboard.nexmo.com/messages/create-application)
 - A Facebook page for a business or brand
-- A [Google Dialogflow](https://dialogflow.com) account
+- A [Google Dialogflow ES](https://dialogflow.com) account
 
 ## Installation
 
@@ -25,4 +25,4 @@ To get this up and running:
 
 For testing, you can set your app up as a Small Talk Bot that will generate chirpy responses to anything you ask it. Once you've confirmed everything is working you'll want to move to using your own Intents and Entities to make it _useful_.
 
-For more information on getting Dialogflow up and running, check out the [Dialogflow documentation](https://dialogflow.com/docs/getting-started).
+For more information on getting Dialogflow up and running, check out the [Dialogflow ES documentation](https://dialogflow.com/docs/getting-started).
